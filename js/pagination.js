@@ -26,9 +26,9 @@ html += '<li><a href="/search/label/' + lblname1 + '?max-results=' + postperpage
 }
 } else {
 if (jenis == "page") {
-html += '<li><a href="#" onclick="redirectpage(' + prevnomer + ');return false">' + upPageWord + '</a></li>'
+html += '<li><a href="javascript:void(0)" onclick="redirectpage(' + prevnomer + ');return false">' + upPageWord + '</a></li>'
 } else {
-html += '<li><a href="#" onclick="redirectlabel(' + prevnomer + ');return false">' + upPageWord + '</a></li>'
+html += '<li><a href="javascript:void(0)" onclick="redirectlabel(' + prevnomer + ');return false">' + upPageWord + '</a></li>'
 }
 }
 }
@@ -44,7 +44,7 @@ html += ' ... '
 }
 for (var jj = mulai; jj <= akhir; jj++) {
 if (nomerhal == jj) {
-html += '<li class="current">' + jj + '</li>'
+html += '<li class="current"><a href="javascript:void(0)" onclick="redirectpage(' + jj + ');return false">' + jj + '</a></li>'
 } else if (jj == 1) {
 if (jenis == "page") {
 html += '<li><a href="' + home_page + '">1</a></li>'
@@ -53,9 +53,9 @@ html += '<li><a href="/search/label/' + lblname1 + '?max-results=' + postperpage
 }
 } else {
 if (jenis == "page") {
-html += '<li><a href="#" onclick="redirectpage(' + jj + ');return false">' + jj + '</a></li>'
+html += '<li><a href="javascript:void(0)" onclick="redirectpage(' + jj + ');return false">' + jj + '</a></li>'
 } else {
-html += '<li><a href="#" onclick="redirectlabel(' + jj + ');return false">' + jj + '</a></li>'
+html += '<li><a href="javascript:void(0)" onclick="redirectlabel(' + jj + ');return false">' + jj + '</a></li>'
 }
 }
 }
@@ -64,17 +64,17 @@ html += '...'
 }
 if (akhir < maksimal) {
 if (jenis == "page") {
-html += '<li><a href="#" onclick="redirectpage(' + maksimal + ');return false">' + maksimal + '</a></li>'
+html += '<li><a href="javascript:void(0)" onclick="redirectpage(' + maksimal + ');return false">' + maksimal + '</a></li>'
 } else {
-html += '<li><a href="#" onclick="redirectlabel(' + maksimal + ');return false">' + maksimal + '</a></li>'
+html += '<li><a href="javascript:void(0)" onclick="redirectlabel(' + maksimal + ');return false">' + maksimal + '</a></li>'
 }
 }
 var nextnomer = parseInt(nomerhal) + 1;
 if (nomerhal < maksimal) {
 if (jenis == "page") {
-html += '<li><a href="#" onclick="redirectpage(' + nextnomer + ');return false">' + downPageWord + '</a></li>'
+html += '<li><a href="javascript:void(0)" onclick="redirectpage(' + nextnomer + ');return false">' + downPageWord + '</a></li>'
 } else {
-html += '<li><a href="#" onclick="redirectlabel(' + nextnomer + ');return false">' + downPageWord + '</a></li>'
+html += '<li><a href="javascript:void(0)" onclick="redirectlabel(' + nextnomer + ');return false">' + downPageWord + '</a></li>'
 }
 }
 var pageArea = document.getElementsByName("pageArea");
