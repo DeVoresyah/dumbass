@@ -35,7 +35,7 @@
 
 /** Preloader **/
 
-$(window).load(function() { // makes sure the whole site is loaded
+$(window).on('load', function() { // makes sure the whole site is loaded
    var preloader=$('#preloader div');
    preloader.fadeOut(); // will first fade out the loading animation
    $('#preloader').delay(350).fadeOut('slow'); 
