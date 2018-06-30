@@ -1,20 +1,3 @@
-/** Request Form Price Slider **/
-
-$(document).ready(function(){
-
-    $("#bootstrap-slider").slider();
-    $("#bootstrap-slider").on("slide", function(slideEvt) {
-        $("#sliderValue").text(slideEvt.value);
-    });
-    
-    $('.slider').on("click", function() {
-        var newvalue = $('.tooltip-inner').text();
-        $("#sliderValue").text(newvalue);
-    });
-
-});
-
-
 /** Navbar **/
 
 (function($) {
