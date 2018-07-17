@@ -1,0 +1,1423 @@
+/*
+Template Name: Bprime - Business Consulting and Professional Services HTML Template.
+Author: Envatoprime.
+Designed by: Envatoprime.
+Version: 1.00.
+
+Table of Content
+--------------------------------------------
+1. common css start
+2. navbar css start
+3. bannerpart css start
+4. businessplan part start 
+5. about us css start
+6. our service part css start
+7. work part css start .
+8. video part start
+9. testimonial part start
+10. pricing part css
+11. team start 
+12. clients part start
+13. map class start
+14. contactus part start
+15. preloader css start
+
+===============================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,500,500i');
+/* === link end == */
+
+/* ==============================
+1. common css start
+==================================*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+    color: #222222;
+    ;
+}
+
+img {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+address,
+strong,
+i,
+blockquote {
+    margin: 0px;
+    padding: 0px;
+    line-height: normal;
+}
+
+.pl {
+    padding-left: 0px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+p {
+    color: #8e8b8b;
+}
+
+i {
+    color: #8e8b8b;
+}
+
+
+
+#about h2,
+#servicepart h2,
+#gallery h2,
+#aboutuspart h2,
+#team h2,
+#clientpart h2,
+#pricing h2,
+#latestnewspart h2,
+#clientpart h2,
+#testimonialpart h2,
+#contactuspart h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*==========================
+common css end
+============================*/
+
+/*=========================
+2. navbar css start
+===========================*/
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.navigation {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    position: fixed;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+}
+
+.navigation .navbar-nav .nav-item {
+    padding: 0px;
+}
+
+.navigation .navbar-nav .nav-item .nav-link {
+    color: #f1f1f1;
+    line-height: 70px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0px 12px;
+    text-transform: capitalize;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+}
+
+.navbaraddcolor {
+    background: #222;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.30);
+    -ms-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.30);
+    -o-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.30);
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+}
+
+.nav-link {
+    line-height: 70px;
+    position: relative;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+    text-align: center;
+}
+
+.nav-link::after {
+    position: absolute;
+    bottom: 15px;
+    background: #fff;
+    width: 10%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    opacity: 0;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+    width: 80%;
+}
+
+.nav-link.active::after {
+    opacity: 1;
+    width: 80%;
+}
+
+.navigation .bg {
+    background: #fff;
+}
+
+/*===========================
+navbar css end
+=============================*/
+
+/*============================
+3. bannerpart css start
+==============================*/
+
+#bannerpart {
+    position: relative;
+    background: url(../images/banner/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#bannerpart .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+#bannerpart .bannertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.businessplantext {
+    margin-right: 15px;
+}
+
+.bannertext h5 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bannertext p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.bannertext a {
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 25px;
+}
+
+.bannertext .btn-custom_bg {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 0px;
+    margin: 5px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+#bannerpart .btn-custom_bg:hover {
+    color: #fff;
+    background: #3f51b5;
+    border: 1px solid #3f51b5;
+}
+
+/*==================================
+ bannerpart css end
+==================================*/
+
+/*==================================
+4. businessplan part start 
+====================================*/
+
+#businessplan {
+    overflow: hidden;
+}
+
+.image_1,
+.image_2,
+.image_3 {
+    overflow: hidden;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+}
+
+.image_1:hover img,
+.image_2:hover img,
+.image_3:hover img {
+    transform: scale(1.2);
+}
+
+#businessplan img {
+    position: relative;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+}
+
+.overlayimageone {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: rgba(49, 70, 123, .7);
+    padding: 15px;
+}
+
+.overlayimagetwo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: rgba(35, 79, 184, 0.7);
+    padding: 15px;
+    overflow: hidden;
+}
+
+.overlayimagethree {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: rgba(49, 70, 123, 0.7);
+    padding: 15px;
+}
+
+.businessplantext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.businessplantext i {
+    color: #fff;
+    font-size: 40px;
+}
+
+.businessplantext h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.businessplantext p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*=============================
+businessplan part end 
+===============================*/
+
+/*===========================
+5. about us css start
+============================= */
+
+#about {
+    padding: 90px 0px 98px;
+}
+
+#about h2 {
+    margin-bottom: 40px;
+}
+
+#about h4 {
+    margin-bottom: 25px;
+}
+
+#about .about-f-p {
+    margin-bottom: 25px;
+}
+
+/*===========================
+about us css end
+============================= */
+
+/*=============================
+6. our service part css start
+===============================*/
+
+#servicepart {
+    padding: 91px 0px 98px;
+    background: whitesmoke;
+}
+
+.sarvicecard {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#servicepart h2 {
+    margin-bottom: 26px;
+}
+
+.sarvicecard i {
+    position: relative;
+    margin-top: 15px;
+    color: #8e8b8b;
+    text-align: center;
+    font-size: 35px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid #8e8b8b;
+    border-radius: 50%;
+}
+
+.sarvicecard i::after {
+    position: absolute;
+    content: " ";
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #8e8b8b;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.sarvicecard:hover.sarvicecard i::after {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.contant h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.contant p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+a.btn-detail {
+    background: #222;
+    color: #f1f1f1;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a.btn-detail:hover {
+    background: #3f51b5;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-dots li {
+    float: left;
+    display: inline-block;
+}
+
+.slick-dots li.slick-active button {
+    background: #3f51b5;
+    border: 1px solid #3f51b5;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 30px;
+    height: 5px;
+    border: 1px solid #cecece;
+    margin-right: 5px;
+    background: #f1f1f1;
+}
+
+/*===============================
+our service part css end
+====================================*/
+
+/*================================
+7. work part css start 
+=================================*/
+
+#gallery {
+    padding: 90px 0px 80px;
+}
+
+#gallery h2 {
+    margin-bottom: 29px;
+}
+
+.portfolio-area {
+    z-index: 999;
+    overflow: hidden;
+}
+
+.protfolio-filter {
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+}
+
+.protfolio-filter {
+    text-align: center;
+}
+
+.protfolio-filter li {
+    list-style: none;
+    margin: 0 0px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    border-right: 1px solid #222;
+    cursor: pointer;
+}
+
+.protfolio-filter li:last-child {
+    border-right: 0px solid #222;
+}
+
+.protfolio-filter li {
+    background: transparent;
+    padding: 1px 8px;
+    border-radius: 2px;
+    color: #222;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.protfolio-filter li:hover,
+.protfolio-filter li.active {
+    color: #8e8b8b;
+}
+
+
+.portfolio-item {
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+
+.portfolio-item .portfolio-item-content {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+.portfolio-item:hover .portfolio-item-content {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+
+.item-thumbnail::before {
+    background-color: rgba(35, 79, 184, 0.7);
+    top: 0px;
+    left: -100%;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.portfolio-item:hover .item-thumbnail::before {
+    left: 0%;
+}
+
+.item-thumbnail img {
+    width: 100%;
+}
+
+.item-thumbnail a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.item-thumbnail a i {
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.item-thumbnail a:hover {
+    background: #fff;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+}
+
+.item-thumbnail a:hover i {
+    color: #333
+}
+
+.portfolio-item:hover .item-thumbnail a {
+    opacity: 1;
+}
+
+.portfolio-description {
+    background: #fff;
+    padding: 20px;
+}
+
+.portfolio-description > h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    text-transform: capitalize;
+}
+
+.portfolio-description > a {
+    text-transform: capitalize;
+}
+
+.portfolio-description > h4 a:hover {
+    color: #3f51b5;
+}
+
+.portfolio-category > li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+.portfolio-category > li::before {
+    content: ",";
+    position: absolute;
+    right: -5px;
+}
+
+.portfolio-category > li:last-child::before {
+    display: none;
+}
+
+.portfolio-category a {
+    color: #3a3a3a;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.portfolio-category a:hover {
+    color: #EF4836;
+}
+
+.hidden {
+    display: none;
+}
+
+.load-more {
+    margin-top: 20px;
+}
+.mix {
+    display: none;
+}
+/*===========================
+Work part css end 
+=============================*/
+
+/*==============================
+8. video part start
+=================================*/
+
+#videopart {
+    background: url(../images/videobg/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0px;
+    position: relative;
+}
+
+.videobgoverly {
+    position: absolute;
+    background-color: rgba(35, 79, 184, 0.7);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.video_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.video_content a i {
+    color: #f1f1f1;
+    padding: 15px 20px;
+    border: 1px solid #f1f1f1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 9;
+}
+
+.video_content:hover a i {
+    background: #3f51b5;
+    border-color: #3f51b5;
+}
+
+/*===============================
+video part end
+===================================*/
+
+/*==============================
+9. testimonial part start
+=================================*/
+
+#testimonialpart {
+    background: #fff;
+    padding: 90px 0px 100px;
+    position: relative;
+}
+
+#testimonialpart h2 {
+    margin-bottom: 40px;
+}
+
+#testimonialpart .container {
+    position: inherit;
+    z-index: 2;
+}
+
+.testimonial {
+    background: whitesmoke;
+    padding: 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 5px solid rgb(251, 251, 251);
+}
+
+.testimonial h6 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 5px;
+}
+
+.testimonial h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*=================================
+testimonial part end
+===================================*/
+
+/* ========================== 
+10. pricing part css
+=========================== */
+
+#pricing {
+    padding: 90px 0px 100px;
+    background: whitesmoke;
+}
+
+.price {
+    margin-top: 40px;
+}
+
+.price-heading h2 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+
+.price-heading p {
+    font-size: 14px;
+    padding: 0 275px;
+    margin-bottom: 0;
+}
+
+.pricing-category {
+    background: #fff;
+    position: relative;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.13);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.price-head h3 {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.price-details {
+    padding-top: 40px;
+}
+
+.price-details p {
+    color: #444444;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.join h4 {
+    padding: 30px 0px;
+    display: block;
+    text-align: center;
+}
+
+.join a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid #3f51b5;
+    padding: 7px 25px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.price-circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #8e8b8b;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.price-rate {
+    width: 90px;
+    height: 90px;
+    background: #8e8b8b;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.price-rate p {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+.price-rate .rate-p {
+    font-size: 14px;
+    padding-top: 0;
+}
+
+.pricing-category:hover {
+    box-shadow: 0 17px 25px rgba(0, 0, 0, 0.13);
+}
+
+.pricing-category:hover .join a {
+    background: #3f51b5;
+    border-color: #3f51b5;
+    color: #fff;
+}
+
+/*=============================
+pricing area end 
+===============================*/
+
+/*===============================
+11. team start 
+================================*/
+
+#team {
+    padding: 90px 0px 100px;
+}
+
+.team_slider_item_info ul li {
+    display: inline-block;
+    padding-left: 3px;
+}
+
+.team_slider_item_info ul li a i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFF;
+    background: #8e8b8b;
+    border-radius: 50%;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.team_slider_item {
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    cursor: pointer;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    transition: all linear .2s;
+}
+
+.team_slider_item_info {
+    position: relative;
+    background: #fff;
+}
+
+.team_slider_item:hover {
+    filter: drop-shadow(0px 0px 3px rgba(189, 179, 179, 0.6));
+}
+
+.team_slider_item_info ul li a i:hover {
+    background: #3f51b5;
+}
+
+.team_slider_item h4 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+
+.team_slider_item p {
+    padding-top: 5px;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    color: #222;
+    font-style: italic;
+}
+
+.team_slider_item .social_icon {
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+/*=================================
+team area end
+================================== */
+
+/*================================
+12. counter part start
+==================================*/
+
+#counterpart {
+    padding: 90px 0px;
+    background: url('../images/counter/bg-square.png');
+}
+
+#counterpart p {
+    font-size: 45px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#counterpart h5 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+/*===============================
+counter part end
+====================================*/
+
+/*=================================
+12. clients part start
+===================================*/
+
+#clientpart {
+    padding: 90px 0px 100px;
+}
+
+#clientpart h2 {
+    margin-bottom: 40px;
+}
+
+.clientslide a img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    transition: all linear .2s;
+}
+
+.clientslide a img:hover {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/*==============================
+clients part end
+==============================*/
+
+/*============================
+13. map class start
+================================*/
+
+#map {
+    width: 100%;
+    height: 450px;
+}
+
+/*============================
+map class end
+==============================*/
+
+/*=================================
+14. contactus part start
+==================================*/
+
+#footerbg {
+    background: #222;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*padding-bottom: 100px;*/
+    position: relative;
+}
+
+.po-re {
+    position: relative;
+}
+
+.contactbg {
+    background: #333;
+    padding: 20px 15px;
+    z-index: 9;
+}
+
+.copy-bg {
+    background: #333;
+    color: #fff;
+    z-index: 9;
+    position: inherit;
+    padding: 20px 0px;
+}
+
+.copy-bg a {
+    color: #fff;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.copy-bg a:hover {
+    color: whitesmoke;
+}
+
+#contactuspart h5 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#contactuspart p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#contactuspart i {
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    margin-right: 20px;
+}
+
+.footertext {
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.footertext p {
+    margin: 15px 0px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footertext a span {
+    font-size: 16px;
+    background: #fff;
+    color: #222222;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    font-smoothing: antialiased;
+    border: 2px solid transparent;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    transition: all linear .5s;
+    margin-right: 15px;
+}
+
+.footertext a span:hover {
+    background: none;
+    color: #fff3cd;
+    border: 2px solid #fff3cd;
+    -webkit-transform: scale(1.2);
+}
+
+.manu h6 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.manu ul {
+    list-style-type: square;
+    color: #f1f1f1;
+    margin-left: 20px;
+}
+
+.manu ul li a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+#contactuspart .form-control {
+    background: none;
+    color: #fff;
+}
+
+#contactuspart .input-group-text {
+    border-radius: 0px;
+    background: none;
+}
+
+.form-group input {
+    border-radius: 0px;
+}
+
+.form-group textarea {
+    border-radius: 0px;
+}
+
+.btn-customing {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+.btn-customing:hover {
+    background: none;
+    border: 1px solid #3f51b5;
+    background: #3f51b5;
+    font-size: 14px;
+}
+
+.form-control::placeholder {
+    color: #fff;
+    font-size: 14px;
+}
+
+label {
+    color: #fff;
+}
+
+
+#contactuspart .bottomtotop i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    position: fixed;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    background: #3f51b5;
+    color: #fff;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    bottom: 10px;
+    right: 0;
+    z-index: 80;
+    border: 1px solid #3f51b5;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    transition: all linear .3s;
+}
+
+#contactuspart .bottomtotop i:hover {
+    background: #22359e;
+}
+
+/*============================
+contactus part end
+===============================*/
+
+/*============================
+15. preloader css start
+===============================*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999;
+    background: #fafafa;
+    height: 100%;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -45px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9fa8da;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #1a237e;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #5c6bc0;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/*=============================
+preloader css end
+================================*/
+
