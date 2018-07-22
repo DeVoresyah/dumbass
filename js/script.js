@@ -242,7 +242,7 @@ $(function ($) {
 		var mapOptions = {
 			zoom: 15,
 			scrollwheel: false,
-			center: new google.maps.LatLng(23.8103, 90.4125)
+			center: new google.maps.LatLng(34.1015097, -117.5464075)
 			
 		};
 		var mapElement = document.getElementById('map');
@@ -251,7 +251,7 @@ $(function ($) {
 			map: map,
 			draggable: true,
 			animation: google.maps.Animation.BOUNCE,
-			position: new google.maps.LatLng(23.8103, 90.4125)
+			position: new google.maps.LatLng(34.1015097, -117.5464075)
 		});
 		marker.setAnimation(google.maps.Animation.BOUNCE);
 	};
